@@ -24,6 +24,8 @@ module.exports = {
         argsIgnorePattern: 'res|next|^err',
       },
     ],
+    'no-constant-binary-expression': 'error',
+    'prefer-object-has-own': 0,
     'prefer-const': [
       'error',
       {
@@ -78,9 +80,9 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        printWidth: 120,
+        printWidth: 100,
         singleQuote: true,
-        jsxSingleQuote: true,
+        jsxSingleQuote: false,
         trailingComma: 'all',
         bracketSameLine: false,
         semi: true,
